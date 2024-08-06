@@ -4,5 +4,5 @@
 // })
 
 module.exports = {
-   baseUrl: '/projeto-icproaasi'
-  }
+   publicPath: process.env.NODE_ENV === 'production' ? '/teste-site/' : '/'
+ } 
