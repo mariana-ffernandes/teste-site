@@ -135,4 +135,59 @@ main {
   cursor: pointer;
   box-shadow: 5px 5px 1px -1px var(--color-text-top);
 }
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .handling-button {
+    font-size: 2rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .handling-button {
+    height: 80px;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .header-container {
+    padding: 0px;
+  }
+
+  .handling-button {
+    height: 80px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    align-self: center;
+  }
+
+  .title {
+    margin-top: 100px;
+    font-size: 1.2rem;
+  }
+
+  .back-button,
+  .exit-button {
+    font-size: 1.2rem; 
+    padding: 7px 15px; 
+  }
+}
 </style>

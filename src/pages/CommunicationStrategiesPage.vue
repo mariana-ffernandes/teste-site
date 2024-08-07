@@ -196,4 +196,58 @@ main {
   cursor: pointer;
   box-shadow: 5px 5px 1px -1px var(--color-text-top);
 }
-</style>  
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .strategy-button {
+    font-size: 2rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    margin-top: 50px;
+    font-size: 1.5rem;
+  }
+
+  .back-button,
+  .exit-button {
+    font-size: 1.5rem; 
+    padding: 7px 15px; 
+  }
+
+  .buttons-container{
+    gap: 10px;
+  }
+  .strategy-button {
+    height: 80px;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .strategy-button {
+    height: 80px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    align-self: center;
+  }
+
+  .title {
+    margin-top: 80px;
+    font-size: 1.2rem;
+  }
+
+  .back-button,
+  .exit-button {
+    font-size: 1.2rem; 
+    padding: 7px 15px; 
+  }
+}
+</style>

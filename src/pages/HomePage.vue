@@ -93,7 +93,7 @@ export default {
 
 .buttons-container {
   width: 35rem;
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -173,6 +173,7 @@ export default {
 
   .title {
     font-size: 5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
 
   .subtitle {
@@ -182,6 +183,7 @@ export default {
     font-weight: 600;
     text-align: center;
     max-width: 80%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
 
   .buttons-container {
@@ -195,12 +197,19 @@ export default {
 }
 
 @media (max-width: 480px) {
+  .header-container {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
   .logo {
     width: 150px; 
   }
 
   .title {
     font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
 
   .subtitle {
@@ -210,6 +219,7 @@ export default {
     font-weight: 600;
     text-align: center;
     max-width: 80%;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.3);
   }
 
   .buttons-container {
@@ -218,7 +228,7 @@ export default {
   }
 
   .button {
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding: 10px;
     width: 100%;
   }

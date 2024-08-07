@@ -51,6 +51,7 @@ export default {
 }
 
 .back-button {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 20px;
@@ -72,6 +73,7 @@ export default {
   color: var(--color-text-top);
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
+  font-weight: 600;
   margin: 25px auto;
   text-align: center;
   width: fit-content;
@@ -93,7 +95,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
+  margin: 70px auto;
   cursor: pointer;
   width: 150px;
   word-wrap: break-word;
@@ -110,6 +112,7 @@ export default {
 }
 
 .exit-button {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: 600;
   margin-top: 20px;
@@ -119,5 +122,80 @@ export default {
   border: none;
   cursor: pointer;
   box-shadow: 5px 5px 1px -1px var(--color-text-top);
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .device {
+    width: 120px;
+  }
+
+  .device p {
+    font-size: 1.2rem; 
+  }
+
+  .back-button,
+  .exit-button {
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .devices-container {
+    height: auto; 
+  }
+
+  .device {
+    width: 40%;
+    margin: 30px;
+  }
+
+  .device p {
+    font-size: 1.2rem; 
+  }
+
+  .back-button {
+    font-size: 1.2rem;
+    padding: 7px 15px; 
+    margin-top: 20px;
+  }
+  .exit-button {
+    font-size: 1.2rem; 
+    padding: 7px 15px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    margin-top: 60px;
+    font-size: 1.2rem;
+  }
+
+  .back-button,
+  .exit-button {
+    font-size: 1rem; 
+    padding: 7px 15px; 
+  }
+
+  .devices-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .device {
+    width: 80%; 
+    margin: 10px 0; 
+  }
+
+  .device p {
+    font-size: 1rem;
+  }
 }
 </style>

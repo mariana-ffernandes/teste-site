@@ -34,6 +34,7 @@ export default {
   }
 }
 </script>
+
 <style scoped>
 .identification-page {
     text-align: center;
@@ -57,7 +58,7 @@ export default {
     font-weight: 600;
     padding: 8px 20px;
     background-color: var(--color-background);
-    color: var(--color-black)000;
+    color: var(--color-black);
     border: none;
     cursor: pointer;
     box-shadow: 5px 5px 1px -1px var(--color-text-top);
@@ -86,12 +87,12 @@ export default {
 }
 
 .option {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  margin-top: 20px;
-  max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+    max-width: 80%;
 }
 
 .option p {
@@ -112,9 +113,77 @@ export default {
     margin-top: 20px;
     padding: 8px 20px;
     background-color: var(--color-background);
-    color: var(--color-black)000;
+    color: var(--color-black);
     border: none;
     cursor: pointer;
     box-shadow: 5px 5px 1px -1px var(--color-text-top);
+}
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .identification-container {
+        width: 80%;
+    }
+
+    .option p {
+        font-size: 2rem;
+        width: auto; 
+        height: auto; 
+    }
+
+    .exit-button {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .identification-container {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+
+    .option p {
+        font-size: 1.5rem;
+        width: auto;
+        height: auto;
+    }
+
+    .exit-button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .identification-container {
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .option {
+        margin-top: 10px;
+    }
+
+    .option p {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
+    .exit-button {
+        font-size: 1.5rem;
+        padding: 7px 15px;
+    }
 }
 </style>

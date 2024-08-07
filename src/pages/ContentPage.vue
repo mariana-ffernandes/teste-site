@@ -64,7 +64,7 @@ export default {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 2rem;
-  margin: 0;
+  margin: 10px 0;
   white-space: nowrap;
 }
 
@@ -72,9 +72,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
+  gap: 20px; 
   margin-top: 20px;
-  height: 80vh;
+  height: auto; 
 }
 
 .video-container {
@@ -83,7 +83,7 @@ export default {
 
 .video {
   width: 100%;
-  height: calc(90vh - 200px);
+  height: auto; 
 }
 
 .text-container {
@@ -106,4 +106,105 @@ export default {
   line-height: 1.6;
   margin-bottom: 10px;
 }
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .back-button {
+    font-size: 1rem;
+  }
+
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video {
+    height: auto; 
+  }
+
+  .text-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .back-button {
+    font-size: 1.5rem;
+  }
+
+  .video-container {
+    width: 90%;
+    height: auto;
+    flex: 0;
+  }
+
+  .title {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+
+  .main-container {
+    gap: 10px;
+  }
+
+  .text-container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .text-container p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .back-button {
+    font-size: 1.2rem;
+  }
+
+  .video-container {
+    margin-top: 20px;
+    width: 90%;
+    height: auto;
+    flex: 0;
+  }
+
+  .title {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    align-items: center;
+  }
+
+  .main-container {
+    gap: 10px;
+  }
+
+  .text-container h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .text-container p {
+    font-size: 1.5rem;
+  }
+}
 </style>
+

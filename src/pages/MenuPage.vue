@@ -125,4 +125,71 @@ main {
   cursor: pointer;
   box-shadow: 5px 5px 1px -1px var(--color-text-top);
 }
+
+@media (max-width: 1024px) {
+  .text-top {
+    font-size: 1.8rem;
+  }
+
+  .button-container {
+    max-width: 90%;
+  }
+
+  .button-container button {
+    font-size: 1.3rem;
+    padding: 15px;
+  }
+
+  .exit-button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-top {
+    font-size: 1.5rem;
+  }
+
+  main {
+    height: auto; 
+  }
+
+  .button-container {
+    padding: 15px;
+  }
+
+  .button-container button {
+    font-size: 1.2rem;
+  }
+
+  .exit-button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-top {
+    margin-top: 60px;
+    font-size: 1.2rem;
+  }
+
+  .back-button {
+  font-size: 1rem;
+}
+
+  .button-container {
+    margin-top: 0px;
+    padding: 20px;
+  }
+
+  .button-container button {
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  .exit-button {
+    font-size: 1rem;
+    padding: 7px 15px;
+  }
+}
 </style>

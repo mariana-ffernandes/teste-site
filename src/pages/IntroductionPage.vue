@@ -46,17 +46,17 @@ export default {
 
 .back-button {
   position: absolute;
-  left: 40px;
-  top: 25px;
+  left: 20px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   padding: 8px 20px;
-  background-color: var(--color-background);
+  background-color: var(--color-white);
   color: var(--color-black);
   border: none;
   cursor: pointer;
   box-shadow: 5px 5px 1px -1px var(--color-text-top);
+  text-align: center;
 }
 
 .title {
@@ -115,5 +115,66 @@ main {
   border: none;
   cursor: pointer;
   box-shadow: 5px 5px 1px -1px var(--color-text-top);
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .buttons-container {
+    gap: 20px;
+  }
+
+  .button-perda-auditiva,
+  .button-funcao-aparelho {
+    font-size: 2rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .button-perda-auditiva,
+  .button-funcao-aparelho {
+    font-size: 2rem;
+    width: 90%;
+    height: 10rem;
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+.header-container {
+  padding: 0px;
+}
+
+  .title {
+    font-size: 1.2rem;
+    margin-top: 100px;
+  }
+
+  .back-button {
+    font-size: 1rem; 
+  }
+
+  .buttons-container{    
+    padding: 0px 5px;
+    align-items: center;
+  }
+  .button-perda-auditiva,
+  .button-funcao-aparelho {
+    margin-top: 0px;
+    padding: 20px;
+    font-size: 1.2rem;
+  }
 }
 </style>
