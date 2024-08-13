@@ -1,6 +1,6 @@
 <template>
     <div class="importance-page">
-      <h1>A Importância de preencher o forms</h1>
+      <h1>A importância de preencher o forms</h1>
       <br>
       <p>
         Preencher o formulário é uma etapa fundamental para o sucesso da nossa pesquisa de projeto. 
