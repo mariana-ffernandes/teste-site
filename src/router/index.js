@@ -8,7 +8,8 @@ import ContentPage from '@/pages/ContentPage';
 import HomePage from '@/pages/HomePage';
 import LoginPage from '@/pages/LoginPage';
 import AboutPage from '@/pages/AboutPage';
-import IdentificationPage from '@/pages/IdentificationPage'; 
+import IdentificationPage from '@/pages/IdentificationPage';
+import ImportanceForms from '@/pages/ImportanceForms.vue'; // Importação do novo componente
 
 const routes = [
   { path: '/', name: 'Home', component: HomePage },
@@ -27,7 +28,8 @@ const routes = [
       pageTitle: route.query.pageTitle
     })
   },
-  { path: '/about', name: 'About', component: AboutPage }
+  { path: '/about', name: 'About', component: AboutPage },
+  { path: '/importance-of-filling-forms', name: 'ImportanceForms', component: ImportanceForms } // Nova rota
 ];
 
 const router = createRouter({

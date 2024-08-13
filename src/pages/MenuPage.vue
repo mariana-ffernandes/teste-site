@@ -43,7 +43,6 @@ export default {
   display: flex;
   justify-content: center;
   position: relative;
-  padding-bottom: 20px;
 }
 
 .back-button {
@@ -75,7 +74,6 @@ main {
   justify-content: center;
   align-items: center;
   height: 25rem;
-  padding: 0 20px;
 }
 
 .container {
@@ -126,28 +124,14 @@ main {
   box-shadow: 5px 5px 1px -1px var(--color-text-top);
 }
 
-@media (max-width: 1024px) {
-  .text-top {
-    font-size: 1.8rem;
-  }
-
-  .button-container {
-    max-width: 90%;
-  }
-
-  .button-container button {
-    font-size: 1.3rem;
-    padding: 15px;
-  }
-
-  .exit-button {
-    font-size: 0.9rem;
-  }
-}
-
 @media (max-width: 768px) {
   .text-top {
-    font-size: 1.5rem;
+    margin-top: 70px;
+    font-size: 2rem;
+  }
+
+  .back-button {
+    font-size: 1.5rem; 
   }
 
   main {
@@ -155,15 +139,20 @@ main {
   }
 
   .button-container {
-    padding: 15px;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    height: 550px;
   }
 
   .button-container button {
-    font-size: 1.2rem;
+    font-size: 2rem;
+    width: 90%;
+    height: 50%;
   }
 
   .exit-button {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -174,7 +163,7 @@ main {
   }
 
   .back-button {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
   .button-container {
@@ -183,12 +172,12 @@ main {
   }
 
   .button-container button {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 20px;
   }
 
   .exit-button {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 7px 15px;
   }
 }

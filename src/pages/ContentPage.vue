@@ -73,7 +73,7 @@ export default {
   justify-content: center;
   align-items: flex-start;
   gap: 20px; 
-  margin-top: 20px;
+  margin-top: 10px;
   height: auto; 
 }
 
@@ -83,7 +83,7 @@ export default {
 
 .video {
   width: 100%;
-  height: auto; 
+  height: 550px; 
 }
 
 .text-container {
@@ -107,29 +107,6 @@ export default {
   margin-bottom: 10px;
 }
 
-@media (max-width: 1024px) {
-  .title {
-    font-size: 1.8rem;
-  }
-
-  .back-button {
-    font-size: 1rem;
-  }
-
-  .main-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .video {
-    height: auto; 
-  }
-
-  .text-container {
-    max-width: 90%;
-  }
-}
-
 @media (max-width: 768px) {
   .header-container {
     display: flex;
@@ -143,14 +120,14 @@ export default {
   }
 
   .video-container {
+    margin-top: 20px;
     width: 90%;
     height: auto;
-    flex: 0;
   }
 
   .title {
-    margin-top: 10px;
-    font-size: 1.5rem;
+    margin-top: 15px;
+    font-size: 2rem;
     align-items: center;
   }
 
@@ -181,14 +158,12 @@ export default {
   }
 
   .video-container {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 90%;
-    height: auto;
-    flex: 0;
   }
 
   .title {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 1.2rem;
     align-items: center;
   }

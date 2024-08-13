@@ -64,7 +64,7 @@ export default {
   text-align: center;
   width: auto;
   position: absolute;
-  top: 27%;
+  top: 23%;
   left: 20px;
   margin: 10px;
 }
@@ -124,28 +124,10 @@ export default {
   box-shadow: 5px 5px 1px -1px var(--color-text-top);
 }
 
-@media (max-width: 1024px) {
-  .title {
-    font-size: 1.8rem;
-  }
-
-  .device {
-    width: 120px;
-  }
-
-  .device p {
-    font-size: 1.2rem; 
-  }
-
-  .back-button,
-  .exit-button {
-    font-size: 1rem; 
-  }
-}
-
 @media (max-width: 768px) {
   .title {
-    font-size: 1.5rem;
+    margin-top: 30px;
+    font-size: 2rem;
   }
 
   .devices-container {
@@ -158,16 +140,16 @@ export default {
   }
 
   .device p {
-    font-size: 1.2rem; 
+    font-size: 2rem; 
   }
 
   .back-button {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 7px 15px; 
-    margin-top: 20px;
   }
+  
   .exit-button {
-    font-size: 1.2rem; 
+    font-size: 1.5rem; 
     padding: 7px 15px; 
   }
 }
@@ -178,9 +160,15 @@ export default {
     font-size: 1.2rem;
   }
 
-  .back-button,
-  .exit-button {
-    font-size: 1rem; 
+  .back-button
+  { 
+    margin-top: 40px;
+    font-size: 1.2rem; 
+    padding: 7px 15px; 
+  }
+
+  .exit-button {    
+    font-size: 1.2rem; 
     padding: 7px 15px; 
   }
 
@@ -195,7 +183,7 @@ export default {
   }
 
   .device p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 </style>

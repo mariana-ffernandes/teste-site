@@ -38,10 +38,8 @@ export default {
 
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: center;
   position: relative;
-  padding: 20px;
 }
 
 .back-button {
@@ -60,13 +58,11 @@ export default {
 }
 
 .title {
-  color: var(--color-text-top);
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 2rem;
-  margin: 10px auto;
-  text-align: center;
-  width: fit-content;
+  color: var(--color-text-top);
+  margin: 20px auto;
 }
 
 .buttons-container {
@@ -117,25 +113,14 @@ main {
   box-shadow: 5px 5px 1px -1px var(--color-text-top);
 }
 
-@media (max-width: 1024px) {
-  .title {
-    font-size: 1.8rem;
-  }
-
-  .buttons-container {
-    gap: 20px;
-  }
-
-  .button-perda-auditiva,
-  .button-funcao-aparelho {
-    font-size: 2rem;
-    width: 80%;
-  }
-}
-
 @media (max-width: 768px) {
   .title {
-    font-size: 1.5rem;
+    margin-top: 100px;
+    font-size: 2rem;
+  }
+
+  .back-button {
+    font-size: 1.5rem; 
   }
 
   .buttons-container {
@@ -158,7 +143,7 @@ main {
 }
 
   .title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 100px;
   }
 
@@ -170,11 +155,12 @@ main {
     padding: 0px 5px;
     align-items: center;
   }
+
   .button-perda-auditiva,
   .button-funcao-aparelho {
     margin-top: 0px;
-    padding: 20px;
-    font-size: 1.2rem;
+    padding: 10px;
+    font-size: 1.5rem;
   }
 }
 </style>

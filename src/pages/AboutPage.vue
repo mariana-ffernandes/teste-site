@@ -9,13 +9,9 @@
     </header>
     <main class="main-container">
       <p class="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut ante vel metus efficitur lacinia sit amet et nulla. Aenean ullamcorper quam turpis. In eu odio metus. Maecenas pharetra purus sit amet tellus faucibus, in auctor odio tincidunt. Quisque nec pellentesque ipsum, ut sagittis orci. Maecenas neque dolor, ultrices nec elementum ut, euismod tristique felis. In non pharetra nibh. Curabitur finibus nibh in ligula vulputate,
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut ante vel metus efficitur lacinia sit amet et nulla. Aenean ullamcorper quam turpis. In eu odio metus. Maecenas pharetra purus sit amet tellus faucibus, in auctor odio tincidunt. Quisque nec pellentesque ipsum, ut sagittis orci. Maecenas neque dolor, ultrices nec elementum ut, euismod tristique felis. In non pharetra nibh. Curabitur finibus nibh in ligula vulputate,
+        Este conteúdo está sendo elaborado.
       </p>
     </main>
-    <footer class="footer">
-      <router-link to="/" class="back-button">Voltar para a página inicial</router-link>
-    </footer>
   </div>
 </template>
 
@@ -80,15 +76,8 @@ export default {
   color: var(--color-text-container);
 }
 
-.footer {
-  background-color: var(--color-menu-container);
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .back-button {
+  font-family: 'Montserrat', sans-serif;
   width: 20rem;
   height: 3rem;
   display: flex;

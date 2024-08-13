@@ -9,13 +9,23 @@
       style="border: none; width: 100%; height: 100vh;">
       Carregando…
     </iframe>
-    <button @click="proceed" class="proceed-button">Prosseguir</button>
+    <div>
+      <input type="checkbox" id="confirmation" v-model="formSubmitted">
+      <label for="confirmation">Eu preenchi e enviei o formulário.</label>
+    </div>
+    <a href="/importance-of-filling-forms" class="importance-link">Por quê preencher o forms?</a>
+    <button @click="proceed" class="proceed-button" :disabled="!formSubmitted">Prosseguir</button>
   </div>
 </template>
 
 <script>
 export default {
   name: 'LoginPage',
+  data() {
+    return {
+      formSubmitted: false
+    };
+  },
   methods: {
     proceed() {
       this.$router.push({ name: 'Identification' });
@@ -31,6 +41,7 @@ export default {
   align-items: center;
   background-color: #f2e7f9;
 }
+
 .header {
   display: flex;
   flex-direction: column;
@@ -82,8 +93,10 @@ export default {
 }
 
 label {
-  margin-bottom: 5px;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin-left: 10px;
+  color: var(--color-black);
 }
 
 .form-control {
@@ -155,7 +168,7 @@ label {
   color: var(--color-black);
   padding: 10px 20px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   border: none;
   border-radius: 0px;
@@ -171,23 +184,32 @@ label {
   color: #333;
 }
 
-@media (max-width: 1024px) {
-  .header-title {
-    font-size: 2.5rem;
-  }
-  
-  .login-container {
-    width: 80%;
-    height: auto;
-  }
+.proceed-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
 
-  .login-button {
-    width: 80%;
-  }
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
 
-  .extra-button {
-    width: 80%;
-  }
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  accent-color: var(--color-black); 
+}
+
+.custom-checkbox:focus {
+  outline: 2px solid var(--color-shadow-button); 
+}
+
+.importance-link {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 5px;;
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

@@ -121,15 +121,13 @@ export default {
 <style scoped>
 .communication-strategies-page {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: center;
   position: relative;
-  padding: 20px;
 }
 
 .back-button {
@@ -140,8 +138,8 @@ export default {
   font-size: 1.2rem;
   font-weight: 600;
   padding: 8px 20px;
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: var(--color-background);
+  color: var(--color-black)000;
   border: none;
   cursor: pointer;
   box-shadow: 5px 5px 1px -1px var(--color-text-top);
@@ -167,8 +165,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  max-width: 80%;
-  margin: 0 auto;
+  margin: 20px 0;
 }
 
 .strategy-button {
@@ -190,43 +187,31 @@ main {
   font-weight: 400;
   margin-top: 20px;
   padding: 8px 20px;
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: var(--color-background);
+  color: var(--color-black)000;
   border: none;
   cursor: pointer;
   box-shadow: 5px 5px 1px -1px var(--color-text-top);
 }
 
-@media (max-width: 1024px) {
-  .title {
-    font-size: 2rem;
-  }
-
-  .strategy-button {
-    font-size: 2rem;
-    width: 80%;
-  }
-}
-
 @media (max-width: 768px) {
+
   .title {
-    margin-top: 50px;
-    font-size: 1.5rem;
+    margin-top: 100px;
+    font-size: 2rem;
+    align-content: center;
   }
 
-  .back-button,
-  .exit-button {
-    font-size: 1.5rem; 
-    padding: 7px 15px; 
-  }
-
-  .buttons-container{
+  .buttons-container {
+    margin-top: 40px;
+    flex-direction: column;
     gap: 10px;
   }
+
   .strategy-button {
-    height: 80px;
+    height: 100px;
     padding: 10px 30px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     align-self: center;
   }
 }
@@ -240,7 +225,7 @@ main {
   }
 
   .title {
-    margin-top: 80px;
+    margin-top: 100px;
     font-size: 1.2rem;
   }
 

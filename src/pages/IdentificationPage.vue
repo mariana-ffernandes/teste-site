@@ -70,7 +70,7 @@ export default {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 2.5rem;
-    margin: 10px auto;
+    margin: 0px auto;
     text-align: center;
     width: fit-content;
 }
@@ -82,7 +82,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px auto;
+    margin: 0px auto;
     width: 50rem;
 }
 
@@ -119,39 +119,20 @@ export default {
     box-shadow: 5px 5px 1px -1px var(--color-text-top);
 }
 
-@media (max-width: 1024px) {
-    .title {
-        font-size: 2rem;
-    }
-
-    .identification-container {
-        width: 80%;
-    }
-
-    .option p {
-        font-size: 2rem;
-        width: auto; 
-        height: auto; 
-    }
-
-    .exit-button {
-        font-size: 1.2rem;
-    }
-}
-
 @media (max-width: 768px) {
     .title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .identification-container {
         flex-direction: column;
         width: 90%;
         align-items: center;
+        height: 600px;
     }
 
     .option p {
-        font-size: 1.5rem;
+        font-size: 2rem;
         width: auto;
         height: auto;
     }

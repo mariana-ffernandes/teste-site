@@ -8,6 +8,7 @@
       <PageFooter v-if="route.name === 'Register'" />
       <PageFooter v-if="route.name === 'About'" />
       <PageFooter v-if="route.name === 'RegistrationSuccess'" />
+      <PageFooter v-if="route.name === 'ImportanceForms'" />
     </router-view>
   </div>
 </template>

@@ -61,15 +61,13 @@ export default {
 <style scoped>
 .device-handling-page {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .header-container {
   display: flex;
-  align-items: center;
   justify-content: center;
   position: relative;
-  padding: 20px;
 }
 
 .back-button {
@@ -136,32 +134,23 @@ main {
   box-shadow: 5px 5px 1px -1px var(--color-text-top);
 }
 
-@media (max-width: 1024px) {
-  .title {
-    font-size: 2rem;
-  }
-
-  .handling-button {
-    font-size: 2rem;
-    width: 80%;
-  }
-}
-
 @media (max-width: 768px) {
   .title {
-    margin-top: 20px;
-    font-size: 1.5rem;
+    margin-top: 100px;
+    font-size: 2rem;
+    align-content: center;
   }
 
   .buttons-container {
+    margin-top: 40px;
     flex-direction: column;
     gap: 10px;
   }
 
   .handling-button {
-    height: 80px;
+    height: 100px;
     padding: 10px 30px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     align-self: center;
   }
 }

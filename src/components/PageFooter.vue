@@ -12,6 +12,7 @@ export default {
 
 <style scoped>
 .footer {
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
   height: 8rem;
   background-color: var(--color-menu-container);
@@ -19,10 +20,11 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: auto; /* Adicionado para empurrar o rodapé para o final */
+  margin-top: auto;
 }
 
 .back-button {
+  font-family: 'Montserrat', sans-serif;
   width: 20rem;
   height: 3rem;
   display: flex;
