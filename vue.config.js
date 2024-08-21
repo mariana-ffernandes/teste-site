@@ -4,5 +4,5 @@
 // })
 
 module.exports = {
-   publicPath: process.env.NODE_ENV === 'production' ? '/teste-site/' : '/'
- } 
+  publicPath: process.env.NODE_ENV === 'production' ? '/teste-site/' : '/'
+}

@@ -30,7 +30,7 @@ const routes = [
   },
   { path: '/about', name: 'About', component: AboutPage },
   { path: '/importance-of-filling-forms', name: 'ImportanceForms', component: ImportanceForms }
-];
+  ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
