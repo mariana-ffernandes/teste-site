@@ -13,7 +13,7 @@
       <input type="checkbox" id="confirmation" v-model="formSubmitted">
       <label for="confirmation">Eu preenchi e enviei o formulário.</label>
     </div>
-    <a href="/importance-of-filling-forms" class="importance-link">Por que devo preencher o forms?</a>
+    <router-link to="/importance-of-filling-forms" class="importance-link">Por que devo preencher o forms?</router-link>
     <button @click="proceed" class="proceed-button" :disabled="!formSubmitted">Prosseguir</button>
   </div>
 </template>
