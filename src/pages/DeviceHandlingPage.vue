@@ -134,6 +134,14 @@ main {
   box-shadow: 5px 5px 1px -1px var(--color-text-top);
 }
 
+@media (max-width: 1024px) {
+  .title {
+    margin-top: 100px;
+    font-size: 2.5rem;
+    align-content: center;
+  }
+}
+
 @media (max-width: 768px) {
   .title {
     margin-top: 100px;

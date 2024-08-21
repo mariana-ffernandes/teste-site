@@ -123,6 +123,46 @@ export default {
   color: #333;
 }
 
+@media (max-width: 1024px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-side {
+    align-items: center;
+  }
+
+  .logo {
+    width: 10rem;
+  }
+
+  .title {
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .subtitle {
+    color: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    max-width: 80%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .buttons-container {
+    width: 25rem;
+  }
+
+  .button {
+    font-size: 1.8rem;
+    width: 90%;
+  }
+}
+
 @media (max-width: 768px) {
   .content-container {
     flex-direction: column;

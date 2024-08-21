@@ -124,6 +124,37 @@ export default {
   box-shadow: 5px 5px 1px -1px var(--color-text-top);
 }
 
+@media (max-width: 1024px) {
+  .title {
+    margin-top: 70px;
+    font-size: 2rem;
+  }
+
+  .devices-container {
+    margin-top: 50px;
+    height: auto; 
+  }
+
+  .device {
+    width: 40%;
+    margin: 30px;
+  }
+
+  .device p {
+    font-size: 2rem; 
+  }
+
+  .back-button {
+    font-size: 1.5rem;
+    padding: 7px 15px; 
+  }
+  
+  .exit-button {
+    font-size: 1.5rem; 
+    padding: 7px 15px; 
+  }
+}
+
 @media (max-width: 768px) {
   .title {
     margin-top: 30px;

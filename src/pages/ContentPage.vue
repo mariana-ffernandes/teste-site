@@ -95,23 +95,20 @@ export default {
   color: var(--color-black);
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
 .text-container p {
   color: var(--color-text-container);
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.5rem;
+  line-height: 1.9;
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px){
   .header-container {
-    display: flex;
-    align-items: center;
-    position: relative;
     flex-wrap: wrap;
   }
 
@@ -119,9 +116,15 @@ export default {
     font-size: 1.5rem;
   }
 
+  .main-container {
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+  }
+
   .video-container {
     margin-top: 20px;
-    width: 90%;
+    width: 100%;
     height: auto;
   }
 
@@ -135,21 +138,71 @@ export default {
     gap: 10px;
   }
 
+  .text-container {
+    width: 100%;
+    max-width: none;
+    white-space: pre-wrap;
+  }
+
+  .text-container p {
+    font-size: 1.5rem;    
+  }
+
   .text-container h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+  }
+
+  .back-button {
+    font-size: 1.5rem;
+  }
+
+  .main-container {
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+  }
+
+  .video-container {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .title {
+    margin-top: 15px;
+    font-size: 2rem;
+    align-items: center;
+  }
+
+  .main-container {
+    gap: 10px;
+  }
+
+  .text-container {
+    width: 100%;
+    max-width: none;
+    white-space: pre-wrap;
   }
 
   .text-container p {
     font-size: 1.5rem;
   }
+
+  .text-container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
 }
 
 @media (max-width: 480px) {
   .header-container {
-    display: flex;
-    align-items: center;
-    position: relative;
     flex-wrap: wrap;
   }
 
@@ -157,9 +210,20 @@ export default {
     font-size: 1.2rem;
   }
 
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
   .video-container {
     margin-top: 10px;
-    width: 90%;
+    width: 100%;
+    height: 300px;
+  }
+
+  .video {
+    height: 100%;
   }
 
   .title {
@@ -168,17 +232,14 @@ export default {
     align-items: center;
   }
 
-  .main-container {
-    gap: 10px;
-  }
-
   .text-container h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
   }
 
   .text-container p {
     font-size: 1.5rem;
+    white-space: pre-wrap;
   }
 }
 </style>

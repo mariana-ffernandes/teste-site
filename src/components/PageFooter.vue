@@ -61,6 +61,20 @@ export default {
   }
 }
 
+@media (max-width: 768px) {
+  .footer {
+    height: 6rem;
+    padding: 10px;
+  }
+
+  .back-button {
+    width: 15rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
+
 @media (max-width: 480px) {
   .footer {
     height: 5rem;
@@ -70,7 +84,7 @@ export default {
   .back-button {
     width: 12rem;
     height: 2rem;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     padding: 6px;
   }
 }

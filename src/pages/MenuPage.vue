@@ -81,6 +81,8 @@ main {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  width: 100%;
+  height: auto;
 }
 
 .button-container {
@@ -122,6 +124,38 @@ main {
   border: none;
   cursor: pointer;
   box-shadow: 5px 5px 1px -1px var(--color-text-top);
+}
+
+@media (max-width: 1024px) {
+  .text-top {
+    margin-top: 70px;
+    font-size: 2rem;
+  }
+
+  .back-button {
+    font-size: 1.5rem; 
+  }
+
+  main {
+    height: auto; 
+  }
+
+  .button-container {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    height: 550px;
+  }
+
+  .button-container button {
+    font-size: 2rem;
+    width: 90%;
+    height: 50%;
+  }
+
+  .exit-button {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {

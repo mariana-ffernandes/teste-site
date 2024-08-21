@@ -9,7 +9,7 @@ import HomePage from '@/pages/HomePage';
 import LoginPage from '@/pages/LoginPage';
 import AboutPage from '@/pages/AboutPage';
 import IdentificationPage from '@/pages/IdentificationPage';
-import ImportanceForms from '@/pages/ImportanceForms.vue'; // Importação do novo componente
+import ImportanceForms from '@/components/ImportanceForms.vue';
 
 const routes = [
   { path: '/', name: 'Home', component: HomePage },
@@ -29,7 +29,7 @@ const routes = [
     })
   },
   { path: '/about', name: 'About', component: AboutPage },
-  { path: '/importance-of-filling-forms', name: 'ImportanceForms', component: ImportanceForms } // Nova rota
+  { path: '/importance-of-filling-forms', name: 'ImportanceForms', component: ImportanceForms }
 ];
 
 const router = createRouter({
